@@ -21,10 +21,10 @@ services:
       - RAILS_SERVE_STATIC_FILES=true
     # volumes:
     #   - .:/project # Only mount this volume if running Rails in development mode.
-    # ports:
-    #  - "3000:3000" # Only use if in developement mode
     ports:
-      - "80:3000" # Used if in production mode
+      - "3000:3000" # Only use if in developement mode
+    # ports:
+    #  - "80:3000" # Used if in production mode
     depends_on:
       - db
     # restart: always
