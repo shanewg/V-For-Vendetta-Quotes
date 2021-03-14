@@ -7,7 +7,7 @@ ruby '2.6.5'
 gem 'rails', '~> 6.0.1'
 # Try latest rails 6.1.3
 #gem 'rails', '~> 6.1.3'
-
+gem 'pg'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
@@ -46,9 +46,9 @@ group :development do
   gem 'sqlite3', '~> 1.4'
 end
 
-group :production do
-  gem 'pg'
-end
+# group :production do
+#   gem 'pg'
+# end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
